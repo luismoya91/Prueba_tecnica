@@ -1,0 +1,119 @@
+@-ms-viewport{
+  width: device-width;
+}
+body{
+		
+	width:100%;
+}
+div{
+	margin: 10 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+table{
+	background-color:#e6f9ff;
+	border:2px solid #00ace6;
+	border-radius:4px;
+}
+table tr td{
+	background-color:#e6f9ff;
+	border:1px solid #00ace6;
+	border-radius:4px;
+}
+input{
+	background-color:#e6f9ff;
+	border-radius:6px;
+}
+input:hover{
+	background-color:#ccf2ff;
+	border-radius:6px;
+}
+.login{
+	position: relative;
+}
+.forml{
+	margin: 10 auto;
+	position: absolute;
+	top: 50px;
+	left: 40%;
+}
+.forml div{
+	margin: 10 auto;
+}
+caption{
+	font:normal bold 18px/12px "Arial Verdana";
+	margin-bottom:20px;
+	border:3px solid #00ace6;
+	background-color:#e6f9ff;
+	line-height:40px;
+	border-radius:6px;
+}
+.body1{
+	position: relative;
+}
+.div1{
+	text-align:center;
+	margin:0 auto;
+	height:4%;
+	width:25%;
+	border:3px solid #00ace6;
+	line-height:7px;
+	background-color:#e6f9ff;	
+}
+.div2{
+	float:left;
+}
+button{
+	background-color:#e6f9ff;
+	border-radius:6px;
+}
+button:hover{
+	background-color:#ccf2ff;
+	border-radius:6px;
+}
+.forms{
+	margin: 10 auto;
+	width:50%;
+	height:35%;
+	text-align:center;
+	
+}
+.tag{
+	width: 33%;
+	height: 5%;
+}
+.forms tr td {
+	width: 33%;
+
+}
+.reg{
+	width: 100%;
+	height:100%;
+	background-image:url("img/registrar.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.mod{
+	width: 100%;
+	height:100%;
+	background-image:url("img/modificar.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.eli{
+	width: 100%;
+	height:100%;
+	background-image:url("img/eliminar.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.td1{
+	text-align:center;
+}
+.footer{
+	border:1px solid skyblue;
+	width:50%;
+	margin:10 auto;
+	font:italic bold 1.875em Georgia, serif;
+}
