@@ -10,39 +10,56 @@ include('funciones.php'); //añadimos archivo de funciones
 <html>
 	<head>
 	<title>Modificar Registro Tabla goods</title>
-	<link href="css/estilo.css" rel="stylesheet" type="text/css" >
-	</head>
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" >
+	<link href="css/fontello.css" rel="stylesheet" type="text/css">
+    </head>
 	<body>
-		<div align="center">
+        <header>
+            <div class="contenedor">
+                <h1 class="icon-circulo">
+                My Test
+                </h1>
+                <input type="checkbox" id="menu-barra">
+                <label class="icon-menu" for="menu-barra"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a class="icon-agregar" href="registrar.php">Registro</a>
+                    <a class="icon-editar" href="modificar.php">Editar</a>            
+                    <a class="icon-borrar" href="eliminar_goods.php">Eliminar</a>            
+                </nav>
+            </div>
+        </header>
+        <main>
+		      <div class="contenedor_4" align="center">
 	            <form method="post" action="modificar_reg_goods.php?name=<?php echo $mostrar['name'];?>">
 	                <table>			
 						<caption>MODIFICAR REGISTRO "<?php echo $mostrar['name']; ?>"</caption>
 						<tr>
 							<td>
-							<input  value="<?php echo $mostrar['name']; ?>" type="text" name="name" readonly="readonly" / >
+							<label>Name</label>
 							</td>
 							<td>
-							<label  for="name">Name</label>
+							<input  value="<?php echo $mostrar['name']; ?>" type="text" name="name" readonly="readonly" / >
 							</td>
 						</tr>
 						<tr>
+							<td>
+							<label>Descripcion</label>
+							</td>
 							<td>
 							<input  value="<?php echo $mostrar['descripcion']; ?>" type="text" name="descripcion"/>
 							</td>
-							<td>
-							<label for="descripcion">Descripcion</label>
-							</td>
 						</tr>
 						<tr>
 							<td>
-							<input  value="<?php echo $mostrar['value']; ?>" type="text" name="value"/>
+							<label>Value</label>
 							</td>
 							<td>
-							<label for="value">Value</label>
+							<input  value="<?php echo $mostrar['value']; ?>" type="text" name="value"/>
 							</td>
 						</tr>
 					</table>
-					<table align="center">
+					<table class="subcontenedor_4">
 						<tr>
 							<td><button type="Submit" name="enviar" value="Insertar" >
 							  Guardar
@@ -54,8 +71,11 @@ include('funciones.php'); //añadimos archivo de funciones
 					</table>
 	            </form>
 	       </div>
-	    <div align="center">
-			<a href="index.php"><button>Volver</button></a>
-		</div>
+        </main>
+        <footer>
+	       <div align="center">
+			     <a href="index.php"><button>Volver</button></a>
+		   </div>
+        </footer>
    </body>
 </html>
