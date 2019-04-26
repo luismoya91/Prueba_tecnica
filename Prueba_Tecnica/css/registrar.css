@@ -64,6 +64,7 @@ main .contenedor_2 table tr td input{
     height: auto;
     font-size: 20px;
 }
+
 main .contenedor_2 form div{
 
     margin:35px auto;
@@ -77,6 +78,9 @@ main .contenedor_2 form div input{
     margin: 10px auto;
     font-size: 20px;
     font-weight: 100;
+}
+main .contenedor_2 form div input:hover{
+    background-color:darkslategrey;
 }
 footer div button {
     width: 35%;
